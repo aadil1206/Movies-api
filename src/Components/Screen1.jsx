@@ -14,7 +14,7 @@ const Screen1 = () => {
     fetchdata1();
   }, []);
   return (
-    <div className="col-12 d-flex flex-wrap mt-3">
+    <div className="col-12 d-flex flex-wrap mt-3" >
       {data1.map((item) => {
         return (
           <div
@@ -22,9 +22,9 @@ const Screen1 = () => {
             className="col-sm-6 col-md-4 col-lg-3 px-3 d-flex flex-column align-items-center justify-content-center mb-4"
           >
             <img src={item.image.medium} alt="" className="col-10" />
-            <h1>{item.name}</h1>
+            <h2   style={{height:"83px"}}>{item.name}</h2>
             <p>{item.language}</p>
-            <a href={item.url} target="_blank">{item.url}</a>
+          
             <div className="d-flex justify-content-center col-12">
               <p className="">Schedule:{item.schedule.days} at {item.schedule.time}</p>
               
